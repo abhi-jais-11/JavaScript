@@ -93,8 +93,8 @@ let student1= new Student(1,"John Doe",18);
 student1.getInfo(); // Output: Student ID: 1, Name: John Doe, Age: 18
 let student2= new Student(2,"Mice",18);
 student1.getInfo(); // Output: Student ID: 2, Name:
-
-
+let student3= new Student(3,"John Doe",13);
+student3.getInfo()
 
 //class expression
 
@@ -105,3 +105,6 @@ const MyClass = class {
   
 };
 let obj3 = new MyClass(); // Creating an instance of MyClass
+
+
+
