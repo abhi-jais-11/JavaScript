@@ -1,4 +1,4 @@
-// find the legnth of the string without using the length property
+// find the length of the string without using the length property
 
 function findLegnthOfString(str){
     let count=0;
