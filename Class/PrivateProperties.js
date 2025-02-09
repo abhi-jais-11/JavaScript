@@ -39,12 +39,12 @@ instance.#privateField; // Syntax error
 
 */
 
-class PrivateField{
+class PrivateField {
     #privateVar;
-    constructor(value){
+    constructor(value) {
         this.#privateVar = value;
     }
-    getPrivateVar(){
+    getPrivateVar() {
         return this.#privateVar;
     }
 }
@@ -55,11 +55,11 @@ console.log(obj.getPrivateVar()); // Output: 10
 
 console.log("-------------------------------------------");
 
-class PrivateMethod{
-    #privateMethod(){
+class PrivateMethod {
+    #privateMethod() {
         console.log("Private Method");
     }
-    callPrivateMethod(){
+    callPrivateMethod() {
         this.#privateMethod();
     }
 }
@@ -71,15 +71,15 @@ obj2.callPrivateMethod();
 
 // getter and setter methods
 
-class PrivateProprty{
-    #name
-    constructor(name){
+class PrivateProprty {
+    #name;
+    constructor(name) {
         this.#name = name;
     }
-    setName(name){
-        return this.#name=name;
+    setName(name) {
+        return this.#name = name;
     }
-    getName(){
+    getName() {
         return this.#name;
     }
 }
@@ -88,3 +88,26 @@ let obj3 = new PrivateProprty("John Doe");
 console.log('--------------------------------');
 obj3.setName("Michelle");
 console.log(obj3.getName());
+
+console.log('--------------------------------');
+
+class User {
+    #username = "username12";
+    #password = "user123@";
+
+    constructor(username,password){
+        this.#userLogin(username,password);
+    }
+    #userLogin(uname, upass) {
+        if (this.#username === uname && this.#password === upass) {
+            console.log("Login Successlly!")
+        } else {
+            console.log("Invalid username or password:!");
+        }
+    }
+}
+
+// object creation
+const user=new User("user","userxyz");//invalid
+const user2=new User("username12","user123@");//login
+// user.#username;Property '#username' is not accessible outside class 'User' because it has a private identifier
