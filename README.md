@@ -2,4 +2,6 @@
 
 ## 📖 Topics List 
 
-1.Class and Object https://github.com/abhi-jais-11/JavaScript/tree/main/Class
+- **Class and Object** https://github.com/abhi-jais-11/JavaScript/tree/main/Class
+- **Programs** https://github.com/abhi-jais-11/JavaScript/tree/main/Program
+
